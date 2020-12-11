@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/edit/{{city.id}}" method="post">
+    <div class="row">
+        <div class="col">
+            <label for="City">City Name</label>
+            <input id="City" type="text" class="form-control" placeholder="City Name" name="City" value="{{city.City}}">
+        </div>
+        <div class="col">
+            <label for="State">City State</label>
+            <input id="State" type="text" class="form-control" placeholder="CityState" name="State" value="{{city.State}}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="LatD">City Latitude Degrees</label>
+            <input id="LatD" type="text" class="form-control" placeholder="City LatD" name="LatD" value="{{city.LatD}}">
+        </div>
+        <div class="col">
+            <label for="LatM">City Latitude Minutes</label>
+            <input id="LatM" type="text" class="form-control" placeholder="City LatM" name="LatM" value="{{city.LatM}}">
+        </div>
+        <div class="col">
+            <label for="LatS">City Latitude Seconds</label>
+            <input id="LatS" type="text" class="form-control" placeholder="City LatS" name="LatS" value="{{city.LatS}}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="LonD">City Longitude Degrees</label>
+            <input id="LonD" type="text" class="form-control" placeholder="City LonD" name="LonD" value="{{city.LonD}}">
+        </div>
+        <div class="col">
+            <label for="LonM">City Longitude Minutes</label>
+            <input id="LonM" type="text" class="form-control" placeholder="City LonM" name="LonM" value="{{city.LonM}}">
+        </div>
+        <div class="col">
+            <label for="LonS">City Longitude Seconds</label>
+            <input id="LonS" type="text" class="form-control" placeholder="City LonS" name="LonS" value="{{city.LonS}}">
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+
+</form>
+{% endblock %}
