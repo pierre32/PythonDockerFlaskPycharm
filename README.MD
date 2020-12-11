@@ -1,64 +1,19 @@
-<!doctype html>
-<html lang="en">
-<head>
+# Project Description
+This project is a homework assignment to teach how to get Pycharm setup with Docker, Flask, MySQL, and Postman
+## Assignments
+* [Assignment 2](flask_bootstrap_templates.pdf)
 
-    <!-- Required meta tags -->
-
-    <!-- Bootstrap CSS -->
-
-
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
-{% if user %}
-    <title>Welcome to {{ user.username }}'s site</title>
-    {% else %}
-    <title>Welcome to My Site!</title>
-    {% endif %}
-<head>
- <body>
-<!-- As a heading -->
+## Videos
+* [Video - Assignment 2](https://youtu.be/tylzleJDlkc)
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
-  <a class="navbar-brand" href="#">{% if user %}{{ user.username }}'s Homepage{% else %}
-    <title>Welcome to My Homepage</title>
-    {% endif %}</a>
-  <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNavDropdown" data-toggle="collapse" type="button">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-        <li class="nav-item active">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="/api/v1/cities">Cities API JSON endpoint <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-            <a class="btn btn-success pl-2 lr-2 ml-3" href="/cities/new">Add +<span class="sr-only">(current)</span></a>
-        </li>
-    </ul>
-  </div>
-</nav>
-<main class="container" role="main">
+## Assignment 2 Readings
+* [Getting started and Reference for Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+* [Tutorials this is based on:](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ii-templates)
+* [Documentation for Flask Templates](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/)
 
-    {% block content %}
-    {% endblock %}
-</main>
-<div id="footer">
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script crossorigin="anonymous"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script crossorigin="anonymous"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script crossorigin="anonymous"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</div>
-</body>
-</html>
+# Useful Links
+* [Flask Homepage and Documentation](https://flask.palletsprojects.com/en/1.1.x/)
+* [JSON Spec Reference](https://www.json.org/json-en.html)
+* [SimpleJSON Reference](https://simplejson.readthedocs.io/en/latest/)
+* [W3 Schools SQL Tutorial and Reference](https://www.w3schools.com/sql/)
