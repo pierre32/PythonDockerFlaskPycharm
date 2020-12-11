@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">City Name</th>
+        <th scope="col">Latitude</th>
+        <th scope="col">Longitude</th>
+        <th scope="col">State</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for city in cities %}
+    <tr>
+        <td><a href="view/{{city.id}}">{{ city.City }}</a></td>
+        <td>{{ city.LatD }}° {{ city.LatM }}' {{ city.LatS }}"</td>
+        <td>{{ city.LonD }}° {{ city.LonM }}' {{ city.LatS }}"</td>
+        <td>{{ city.State }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
